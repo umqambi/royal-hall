@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Royal Hall</title>
+</head>
+<body>
+	<div class="container">
+		<!-- HEADER -->
+		<div class="header">
+
+			<div class="h-left">
+				<div class="mb-show">
+					<a href="tel:+79272230278">
+						<img src="./img/phone.png" alt="menu" width="40" height="40">
+					</a>
+				</div>
+			</div>
+
+			<div class="h-center">
+				<img src="./img/logo.svg" alt="">
+			</div>
+
+			<div class="h-right">
+				<p class="mb-none">
+					г. Саратов, Набережная Космонавтов 5а
+				</p>
+				<div class="mb-show">
+					<button class="content_toggle">
+						<img src="./img/hamburger.jpg" alt="menu" width="40" height="40">
+					</button>
+				</div>
+			</div>
+
+		</div>
+		<!-- MAIN -->
+		<div class="main">
+			<!-- BLOCK ONE -->
+			<div class="block-one">
+				<h1>Новогодняя Ночь <span>2022</span></h1>
+				<p class="sub-bead">в банкетном зале Royal Hall с видом на Волгу</p>
+				<p class="link"><a href="tel:+79272230278">+7 927 223 02 78</a></p>
+			</div>
+			<!-- BLOCK TWO -->
+			<div class="block-two">
+				<div class="bt-items">
+					<div class="bt-item">
+						<img src="./img/icon-menu.png" width="50" height="50">
+						<div class="bt-item-text">
+							Меню (холодные закуски , фрукты, салат, горячее, напитки б/а)
+						</div>
+					</div>
+					<div class="bt-item">
+						<img src="./img/icon-micro.png" width="50" height="50">
+						<div class="bt-item-text">
+							Ведущий
+						</div>
+					</div>
+					<div class="bt-item">
+						<img src="./img/icon-show.png" width="50" height="50">
+						<div class="bt-item-text">
+							Шоу программа
+						</div>
+					</div>
+					<div class="bt-item">
+						<img src="./img/icon-gift.png" width="50" height="50">
+						<div class="bt-item-text">
+							Подарки
+						</div>
+					</div>
+					<div class="bt-item">
+						<img src="./img/icon-musik.png" width="50" height="50">
+						<div class="bt-item-text">
+							Дискотека
+						</div>
+					</div>
+					<div class="bt-item">
+						<img src="./img/icon-alko.png" width="50" height="50">
+						<div class="bt-item-text">
+							Алкоголь можно свой
+						</div>
+					</div>
+				</div>
+				<div class="bt-footer">
+					<div class="bt-footer-item">
+						Начало в 22-00
+					</div>
+					<div class="bt-footer-item">
+						Цена билета: <span>4500руб.</span>
+					</div>
+				</div>
+			</div>
+			<!-- BLOCK IMG -->
+			<div class="block-img">
+				<img src="./img/royal-hall.jpg" alt="Royal Hall">
+			</div>
+			<!-- FOOTER -->
+			<div class="footer">
+				С новым годом, ждём вас у нас!
+			</div>
+		</div>
+	</div>
+	<div class="mob-menu" style="display: none">
+		<div class="header">
+
+			<div class="h-left">
+					<a href="tel:+79272230278">
+						<img src="./img/phone.png" alt="menu" width="40" height="40">
+					</a>
+			</div>
+
+			<div class="h-center">
+				<img src="./img/logo.svg" alt="">
+			</div>
+
+			<div class="h-right">
+				<div class="mb-show">
+					<button class="content_toggle">
+						<img src="./img/close.png" alt="menu" width="40" height="40">
+					</button>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="mob-menu-tel">
+			<a href="tel:+79272230278">+7 927 223 02 78</a>
+		</div>
+		<p class="mob-menu-adr">
+			г. Саратов, Набережная Космонавтов 5а
+		</p>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.content_toggle').click(function(){
+				$('.mob-menu').slideToggle(300);
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>

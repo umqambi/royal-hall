@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+	font-family: "Bikham Cyr Script";
+	src: url("../fonts/bikham-cyr-script/bikham-cyr-script.eot"); /* IE9 Compat Modes */
+	src: url("../fonts/bikham-cyr-script/bikham-cyr-script.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+		url("../fonts/bikham-cyr-script/bikham-cyr-script.otf") format("opentype"), /* Open Type Font */
+		url("../fonts/bikham-cyr-script/bikham-cyr-script.svg") format("svg"), /* Legacy iOS */
+		url("../fonts/bikham-cyr-script/bikham-cyr-script.ttf") format("truetype"), /* Safari, Android, iOS */
+		url("../fonts/bikham-cyr-script/bikham-cyr-script.woff") format("woff"), /* Modern Browsers */
+		url("../fonts/bikham-cyr-script/bikham-cyr-script.woff2") format("woff2"); /* Modern Browsers */
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	background-color: #040E21;
+}
+body {
+	margin: 0;
+	
+	background: url(../img/bg-snow.png), url(../img/bg-tree.jpg);
+	background-position:center top, top right;
+	background-repeat:no-repeat, no-repeat;
+	background-size: cover;
+
+	color: #ffffff;
+	font-family: Manrope;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.mb-show, .mb-flex {
+	display: none !important;
+}
+
+.container {
+	max-width: 1050px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding-top: 40px;
+}
+.header div {
+	width: 33%;
+	display: flex;
+	align-items: center;
+}
+.h-center {
+	justify-content: center;
+}
+.h-right {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: right;
+}
+
+.main {
+	padding-bottom: 170px;
+}
+.block-one {
+	margin-bottom: 25px;
+}
+.block-one h1 {
+	font-family: Cormorant Garamond;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 80px;
+	line-height: 110%;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	margin-bottom: 12px;
+}
+.block-one h1 span {
+	font-weight: 600;
+	font-size: 125px;
+}
+.block-one .sub-bead {
+	font-family: Cormorant Garamond;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 50px;
+	line-height: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	opacity: 0.7;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+.block-one p.link {
+	font-family: Manrope;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	line-height: 160%;
+	text-align: center;
+	margin: 0;
+}
+
+.block-two {
+	margin-bottom: 40px;
+}
+.bt-items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.bt-item {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 60px;
+}
+.bt-item img {
+	margin-bottom: 25px;
+}
+.bt-item-text {
+	max-width: 300px;
+	text-align: center;
+}
+.bt-footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 40px;
+	line-height: 160%;
+}
+.bt-footer-item span {
+	font-weight: bold;
+}
+
+.block-img {
+	margin-bottom: 150px;
+}
+.block-img img {
+	width: 100%;
+	height: auto;
+}
+
+.footer {
+	font-family: "Bikham Cyr Script";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 200px;
+	line-height: 60%;
+	text-align: center;
+	color: #E1E9F7;
+}
+.mob-menu {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: #040E21;
+}
+.mob-menu-tel {
+	font-size: 30px;
+	line-height: 160%;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.mob-menu-adr {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 140%;
+	text-align: center;
+}
+
+
+@media (max-width: 1049.98px) {
+	.container {
+/*		padding: 0 10px;*/
+	}
+}
+
+@media (max-width: 991.98px) {
+	body {
+		padding: 0 10px;
+	}
+	.container {
+		overflow: hidden;
+	}
+	.block-one h1 {
+		font-size: 40px;
+	}
+	.block-one h1 span {
+		font-weight: 600;
+		font-size: 65px;
+	}
+	.block-one .sub-bead {
+		font-size: 30px;
+		text-align: left;
+	}
+	.block-one p.link {
+		font-size: 30px;
+		text-align: left;
+	}
+	.bt-item {
+    	width: 50%;
+    }
+    .block-two {
+    	display: flex;
+    	flex-direction: column-reverse;
+    }
+    .bt-footer {
+    	font-size: 20px;
+    	flex-direction: column;
+    	margin-bottom: 20px;
+    }
+    .footer {
+    	font-size: 60px;
+    }
+    .mb-none {
+    	display: none !important;
+    }
+    .mb-show {
+    	display: block !important;
+    }
+    .mb-flex {
+    	display: flex !important;
+    }
+    .h-right {
+    	justify-content: flex-end;
+    }
+    .h-right button {
+    	border: 0;
+    	padding: 0;
+    	margin: 0;
+    	margin-right: 10px;
+    }
+
+}
